@@ -1,0 +1,9 @@
+zuul:
+  retryable: true
+  routes:
+    conversion:
+      path: /conversion/**
+      serviceId: conversion-service
+    forex:
+      path: /forex/**
+      serviceId: forex-service
